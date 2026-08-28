@@ -1,0 +1,400 @@
+{
+  "evidence": "Confirmed by static analysis",
+  "source_root": ".tools\\client_decompiled\\Model.dll",
+  "messages": [
+    {
+      "msg_id": 3,
+      "type": "CSLoginReq",
+      "enum_name": "CsLoginReq",
+      "wire_name": "CS_LOGIN_REQ",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\CSLoginReq.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "Platform",
+          "type": "string"
+        },
+        {
+          "number": 2,
+          "name": "SystemType",
+          "type": "int"
+        },
+        {
+          "number": 3,
+          "name": "AuthToken",
+          "type": "string"
+        },
+        {
+          "number": 4,
+          "name": "OpenId",
+          "type": "string"
+        },
+        {
+          "number": 5,
+          "name": "AuthType",
+          "type": "string"
+        },
+        {
+          "number": 7,
+          "name": "GameVersion",
+          "type": "int"
+        },
+        {
+          "number": 8,
+          "name": "Ip",
+          "type": "string"
+        },
+        {
+          "number": 9,
+          "name": "SelectZone",
+          "type": "int"
+        },
+        {
+          "number": 10,
+          "name": "SubPlatform",
+          "type": "string"
+        },
+        {
+          "number": 11,
+          "name": "UserId",
+          "type": "string"
+        },
+        {
+          "number": 12,
+          "name": "DeviceCode",
+          "type": "string"
+        },
+        {
+          "number": 13,
+          "name": "Account",
+          "type": "string"
+        },
+        {
+          "number": 14,
+          "name": "ClientTrackJson",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "msg_id": 4,
+      "type": "SCLoginAck",
+      "enum_name": "ScLoginAck",
+      "wire_name": "SC_LOGIN_ACK",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\SCLoginAck.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "Error",
+          "type": "int"
+        },
+        {
+          "number": 2,
+          "name": "ClientId",
+          "type": "ulong"
+        },
+        {
+          "number": 3,
+          "name": "ExtParams",
+          "type": "MapField<string, string>"
+        }
+      ]
+    },
+    {
+      "msg_id": 7,
+      "type": "SCHandShakeNtf",
+      "enum_name": "ScHandShakeNtf",
+      "wire_name": "SC_HAND_SHAKE_NTF",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\SCHandShakeNtf.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "CryptPass",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "msg_id": 25,
+      "type": "SCStartupInfoNtf",
+      "enum_name": "ScStartupInfoNtf",
+      "wire_name": "SC_STARTUP_INFO_NTF",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\SCStartupInfoNtf.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "ServerTime",
+          "type": "ulong"
+        },
+        {
+          "number": 2,
+          "name": "CreateTime",
+          "type": "ulong"
+        },
+        {
+          "number": 3,
+          "name": "SelectZone",
+          "type": "int"
+        },
+        {
+          "number": 4,
+          "name": "RoleBase",
+          "type": "RoleBase"
+        },
+        {
+          "number": 5,
+          "name": "RoleBag",
+          "type": "RoleBag"
+        },
+        {
+          "number": 6,
+          "name": "RoleRiskBattle",
+          "type": "RoleRiskBattle"
+        },
+        {
+          "number": 7,
+          "name": "Profile",
+          "type": "ProfileData"
+        },
+        {
+          "number": 9,
+          "name": "AreaTask",
+          "type": "AreaTaskData"
+        },
+        {
+          "number": 30,
+          "name": "RoleRed",
+          "type": "RoleRedData"
+        },
+        {
+          "number": 32,
+          "name": "GeneralTask",
+          "type": "GeneralTaskData"
+        },
+        {
+          "number": 115,
+          "name": "RoleReputation",
+          "type": "RoleReputation"
+        },
+        {
+          "number": 116,
+          "name": "SystemSettings",
+          "type": "RoleSettings"
+        },
+        {
+          "number": 117,
+          "name": "Bestiary",
+          "type": "BestiaryData"
+        },
+        {
+          "number": 118,
+          "name": "RoleSignIn",
+          "type": "RoleSignInData"
+        },
+        {
+          "number": 119,
+          "name": "RoleAddress",
+          "type": "RoleAddress"
+        },
+        {
+          "number": 120,
+          "name": "RoleVip",
+          "type": "RoleVip"
+        },
+        {
+          "number": 121,
+          "name": "RoleGiftSubscribe",
+          "type": "RoleGiftSubscribe"
+        },
+        {
+          "number": 122,
+          "name": "RoleSubscription",
+          "type": "RoleSubscriptionInfo"
+        },
+        {
+          "number": 123,
+          "name": "RoleGuide",
+          "type": "RoleGuide"
+        },
+        {
+          "number": 124,
+          "name": "RoleReset",
+          "type": "RoleReset"
+        },
+        {
+          "number": 125,
+          "name": "RoleStrength",
+          "type": "RoleStrength"
+        },
+        {
+          "number": 126,
+          "name": "TimeZone",
+          "type": "string"
+        },
+        {
+          "number": 127,
+          "name": "DayResetHour",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "msg_id": 26,
+      "type": "SCStartupInfoEquipNtf",
+      "enum_name": "ScStartupInfoEquipNtf",
+      "wire_name": "SC_STARTUP_INFO_EQUIP_NTF",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\SCStartupInfoEquipNtf.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "RoleEquipInfo",
+          "type": "RoleEquip"
+        }
+      ]
+    },
+    {
+      "msg_id": 27,
+      "type": "SCStartupInfoHeroNtf",
+      "enum_name": "ScStartupInfoHeroNtf",
+      "wire_name": "SC_STARTUP_INFO_HERO_NTF",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\SCStartupInfoHeroNtf.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "RoleHeroInfo",
+          "type": "RoleHero"
+        },
+        {
+          "number": 2,
+          "name": "RoleHeroReplayInfo",
+          "type": "RoleHeroReplay"
+        }
+      ]
+    },
+    {
+      "msg_id": 28,
+      "type": "SCStartupInfoEndNtf",
+      "enum_name": "ScStartupInfoEndNtf",
+      "wire_name": "SC_STARTUP_INFO_END_NTF",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\SCStartupInfoEndNtf.cs",
+      "fields": []
+    },
+    {
+      "msg_id": 76,
+      "type": "SCRoleBaseInfoNtf",
+      "enum_name": "ScRoleBaseInfoNtf",
+      "wire_name": "SC_ROLE_BASE_INFO_NTF",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\SCRoleBaseInfoNtf.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "Coin",
+          "type": "ulong"
+        },
+        {
+          "number": 2,
+          "name": "Diamond",
+          "type": "uint"
+        },
+        {
+          "number": 3,
+          "name": "RoleBase",
+          "type": "RoleBase"
+        },
+        {
+          "number": 4,
+          "name": "ResList",
+          "type": "RepeatedField<KeyValueType>"
+        },
+        {
+          "number": 5,
+          "name": "RepressSkillPvpVal",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "msg_id": 377,
+      "type": "CSOrderNoReq",
+      "enum_name": "CsOrderNoReq",
+      "wire_name": "CS_ORDER_NO_REQ",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\CSOrderNoReq.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "Platform",
+          "type": "string"
+        },
+        {
+          "number": 2,
+          "name": "ServerId",
+          "type": "int"
+        },
+        {
+          "number": 3,
+          "name": "ShopId",
+          "type": "int"
+        },
+        {
+          "number": 4,
+          "name": "GoodsId",
+          "type": "int"
+        },
+        {
+          "number": 5,
+          "name": "Quantity",
+          "type": "int"
+        },
+        {
+          "number": 6,
+          "name": "OwnerKey",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "msg_id": 378,
+      "type": "SCOrderNoAck",
+      "enum_name": "ScOrderNoAck",
+      "wire_name": "SC_ORDER_NO_ACK",
+      "source": ".tools\\client_decompiled\\Model.dll\\Serverproto\\SCOrderNoAck.cs",
+      "fields": [
+        {
+          "number": 1,
+          "name": "Error",
+          "type": "int"
+        },
+        {
+          "number": 2,
+          "name": "OrderNo",
+          "type": "ulong"
+        },
+        {
+          "number": 3,
+          "name": "NotifyUrl",
+          "type": "string"
+        },
+        {
+          "number": 4,
+          "name": "ShopId",
+          "type": "int"
+        },
+        {
+          "number": 5,
+          "name": "GoodsId",
+          "type": "int"
+        },
+        {
+          "number": 6,
+          "name": "Quantity",
+          "type": "int"
+        },
+        {
+          "number": 7,
+          "name": "OrderPrice",
+          "type": "int"
+        }
+      ]
+    }
+  ]
+}

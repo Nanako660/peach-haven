@@ -1,0 +1,34 @@
+# 第三方工具与依赖缓存
+.tools/
+.cache/
+
+# 运行时数据库与日志
+server/data/
+server/config.toml
+
+# 根目录收集的运行期日志（设备 logcat 等易变捕获）
+.log/
+
+# 反编译与原始分析输入（体积大、属于只读分析产物）
+*.apk
+*.zip
+apktool.jar
+decoded/
+decoded_smali_20260822/
+files/
+
+# 重新编译 APK 的生成产物（apktool 重打包的 smali/dex 等）
+build/
+
+# 一键 patch 工具的最终导出（签名 APK 与 SHA-256 校验文件）
+dist/
+
+# Python 编译产物
+__pycache__/
+*.pyc
+
+# 操作系统与编辑器临时文件
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
